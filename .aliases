@@ -1,0 +1,1 @@
+alias dotfiles='/usr/bin/git --git-dir=/home/minhlam/.dotfiles/ --work-tree=/home/minhlam'
