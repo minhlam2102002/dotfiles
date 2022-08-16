@@ -121,3 +121,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # starship
 eval "$(starship init zsh)"
+
+# load my aliases
+source .aliases
