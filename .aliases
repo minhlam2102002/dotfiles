@@ -1,1 +1,15 @@
 alias dotfiles='/usr/bin/git --git-dir=/home/minhlam/.dotfiles/ --work-tree=/home/minhlam'
+alias npm-list-global='npm list --location=global --depth=0'
+
+function rcpp() {
+    local srcname="$1";
+    local objname="${srcname%.*}.o";
+    echo "Compiling $srcname";
+    g++ -o "$objname" "$srcname";
+    echo "Running $objname";
+    local start=$(date +%s%3N);
+    ./"$objname" < input.txt > output.;
+    local end=$(date +%s%3N);
+    duration=$((end - start));
+    echo "Time: $duration ms";
+}
