@@ -8,8 +8,9 @@ function rcpp() {
     g++ -o "$objname" "$srcname";
     echo "Running $objname";
     local start=$(date +%s%3N);
-    ./"$objname" < input.txt > output.;
+    ./"$objname" < input.txt > output.txt;
     local end=$(date +%s%3N);
     duration=$((end - start));
+    rm "$objname";
     echo "Time: $duration ms";
 }
