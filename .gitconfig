@@ -1,11 +1,16 @@
 [init]
-	defaultBranch = main
+	defaultBranch = "main"
 [user]
 	email = minhlam2102002@gmail.com
-	name = Minh Lam
+	name = Lam Tran
 [credential "https://github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
 [credential "https://gist.github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
+[color]
+	ui = auto
+[core]
+	autocrlf = input
+	safecrlf = true

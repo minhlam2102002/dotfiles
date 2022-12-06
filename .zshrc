@@ -120,3 +120,12 @@ export NVM_DIR="$HOME/.nvm"
 
 # load my aliases
 source ~/.aliases
+
+# go path
+export PATH=$PATH:/usr/local/go/bin
+
+# react-native
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+
